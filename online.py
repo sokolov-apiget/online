@@ -1,11 +1,12 @@
 import vk_api
+import time
 
 token=''
 
 
-vk_session = vk_api.VkApi(token=access_token)
+vk_session = vk_api.VkApi(token=token)
 vk = vk_session.get_api()
 
-While True:
+while True:
   time.sleep(297)
   vk.account.setOnline
